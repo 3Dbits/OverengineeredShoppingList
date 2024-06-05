@@ -5,8 +5,8 @@ using Serilog;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Host.UseSerilog((context, configuration) =>
-    configuration.ReadFrom.Configuration(context.Configuration));
+builder.Host.UseSerilog((_, configuration) =>
+    configuration.ReadFrom.Configuration(builder.Configuration));
 
 builder.Services.ConfigureCors();
 builder.Services.ConfigureIISIntegration();
@@ -23,7 +23,6 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
-    app.UseDeveloperExceptionPage();
 }
 else
     app.UseHsts();
