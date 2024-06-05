@@ -1,0 +1,9 @@
+2024-03-05 19:51:39.864 +01:00 [WRN] The WebRootPath was not found: C:\Users\mcvetan1\source\repos\OverengineeredShoppingList\OverengineeredShoppingList.API\wwwroot. Static files may be unavailable.
+2024-03-05 19:51:41.626 +01:00 [INF] HTTP GET /swagger responded 301 in 34.6148 ms
+2024-03-05 19:51:41.885 +01:00 [INF] HTTP GET /swagger/index.html responded 200 in 190.9870 ms
+2024-03-05 19:51:42.067 +01:00 [INF] HTTP GET /swagger/swagger-ui.css responded 200 in 60.3862 ms
+2024-03-05 19:51:42.072 +01:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 65.6706 ms
+2024-03-05 19:51:42.089 +01:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 82.8918 ms
+2024-03-05 19:51:42.334 +01:00 [INF] HTTP GET /swagger/favicon-16x16.png responded 200 in 1.0939 ms
+2024-03-05 19:51:42.715 +01:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 336.4023 ms
+2024-03-05 19:51:53.064 +01:00 [INF] HTTP GET /weatherforecast responded 200 in 119.7135 ms
