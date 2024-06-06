@@ -20,4 +20,14 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\OverengineeredShoppingList.Contracts\OverengineeredShoppingList.Application.csproj" />
+    <ProjectReference Include="..\OverengineeredShoppingList.Infrastructure\OverengineeredShoppingList.Infrastructure.csproj" />
+    <ProjectReference Include="..\OverengineeredShoppingList.Persistance\OverengineeredShoppingList.Persistance.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Endpoints\" />
+  </ItemGroup>
+
 </Project>
