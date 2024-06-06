@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.HttpOverrides;
 using OverengineeredShoppingList.API.Configuration;
+using OverengineeredShoppingList.Persistance.Extensions;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +14,8 @@ builder.Services.ConfigureIISIntegration();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddAppDbContext(builder.Configuration);
 
 var app = builder.Build();
 
