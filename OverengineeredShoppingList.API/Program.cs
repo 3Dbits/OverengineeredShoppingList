@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.HttpOverrides;
 using OverengineeredShoppingList.API.Configuration;
+using OverengineeredShoppingList.API.Endpoints;
 using OverengineeredShoppingList.Persistance.Extensions;
 using Serilog;
 
@@ -58,6 +59,8 @@ app.MapGet("/weatherforecast", () =>
 })
 .WithName("GetWeatherForecast")
 .WithOpenApi();
+
+app.MapTagEndpoints();
 
 app.Run();
 

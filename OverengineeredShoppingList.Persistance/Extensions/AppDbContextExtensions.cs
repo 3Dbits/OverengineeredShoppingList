@@ -10,7 +10,7 @@ namespace OverengineeredShoppingList.Persistance.Extensions
         public static void AddAppDbContext(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<AppDbContext>(options =>
-                options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
+                options.UseNpgsql(configuration.GetConnectionString("defaultConnection") ?? throw new InvalidOperationException("Connection string for DB not found.")));
         }
     }
 }

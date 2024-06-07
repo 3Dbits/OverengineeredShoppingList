@@ -1,11 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Design;
+using Microsoft.Extensions.Configuration;
 using OverengineeredShoppingList.Domain.Entities;
-using System.Reflection.Metadata;
 using Type = OverengineeredShoppingList.Domain.Entities.Type;
 
 namespace OverengineeredShoppingList.Persistance.Contexts
 {
-    public class AppDbContext(DbContextOptions options) : DbContext(options)
+    public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
     {
         public DbSet<Product>? Products { get; set; }
         public DbSet<ShoppingList>? ShoppingLists { get; set; }
