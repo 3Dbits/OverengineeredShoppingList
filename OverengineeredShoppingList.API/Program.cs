@@ -17,10 +17,12 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddAppDbContext(builder.Configuration);
+builder.Services.ConfigureRepositoryManager();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+// TODO app.UseStaticFiles();
 app.UseSerilogRequestLogging();
 
 if (app.Environment.IsDevelopment())
@@ -31,7 +33,6 @@ if (app.Environment.IsDevelopment())
 else
     app.UseHsts();
 
-// TODO app.UseStaticFiles();
 app.UseForwardedHeaders(new ForwardedHeadersOptions
 {
     ForwardedHeaders = ForwardedHeaders.All

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
 using OverengineeredShoppingList.Domain.Entities;
-using OverengineeredShoppingList.Persistance.Contexts;
+using OverengineeredShoppingList.Persistance.Data;
 
 namespace OverengineeredShoppingList.API.Endpoints
 {

@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Migrations\" />
-    <Folder Include="Repositories\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,7 +20,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\OverengineeredShoppingList.Contracts\OverengineeredShoppingList.Application.csproj" />
     <ProjectReference Include="..\OverengineeredShoppingList.Domain\OverengineeredShoppingList.Domain.csproj" />
+    <ProjectReference Include="..\OverengineeredShoppingList.Infrastructure\OverengineeredShoppingList.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\OverengineeredShoppingList.Contracts\OverengineeredShoppingList.Application.csproj" />
+  </ItemGroup>
+
 </Project>

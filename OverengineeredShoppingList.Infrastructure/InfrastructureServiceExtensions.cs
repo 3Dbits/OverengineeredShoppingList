@@ -1,6 +1,6 @@
 ﻿namespace OverengineeredShoppingList.Infrastructure
 {
-    public class InfrastructureServiceExtensions
+    public static class InfrastructureServiceExtensions
     {
     }
 }
